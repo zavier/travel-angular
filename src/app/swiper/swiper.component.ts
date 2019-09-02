@@ -1,8 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
 import Swiper from 'swiper';
-import { Image } from '../image';
-
-declare var swiper:any;
 
 @Component({
   selector: 'app-swiper',
@@ -12,7 +9,7 @@ declare var swiper:any;
 export class SwiperComponent implements AfterViewInit {
   slide;
 
-  swiperList: Image[];
+  swiperList;
 
   constructor() {
     this.swiperList = [
