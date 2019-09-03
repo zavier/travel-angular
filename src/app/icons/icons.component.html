@@ -1,13 +1,17 @@
-<div class="icons">
-    <div class="icon" *ngFor="let icon of iconList">
-        <div class="icon-img">
-            <div class="icon-img-content">
-                <img src="{{icon.url}}" alt="{{ icon.desc }}">
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="icons swiper-slide" *ngFor="let page of pages">
+            <div class="icon" *ngFor="let icon of page">
+                <div class="icon-img">
+                    <div class="icon-img-content">
+                        <img src="{{icon.url}}" alt="{{ icon.desc }}">
+                    </div>
+                </div>
+                <div class="icon-desc">
+                    <p>{{ icon.desc }}</p>
+                </div>
             </div>
-        </div>
-        <div class="icon-desc">
-            <p>{{ icon.desc }}</p>
+
         </div>
     </div>
-
 </div>
