@@ -55,7 +55,6 @@ export class IconsService {
       }
       pages[page].push(item)
     })
-    console.log(JSON.stringify(pages))
     return pages;
   }
 }
