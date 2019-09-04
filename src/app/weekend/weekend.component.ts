@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { WeekendService } from '../weekend.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-weekend',
@@ -7,10 +6,9 @@ import { WeekendService } from '../weekend.service';
   styleUrls: ['./weekend.component.styl']
 })
 export class WeekendComponent implements OnInit {
+  @Input()
   weekendList;
-  constructor(private weekendService: WeekendService) {
-    this.weekendList = this.weekendService.getWeekendList();
-  }
+  constructor() { }
 
   ngOnInit() {
     

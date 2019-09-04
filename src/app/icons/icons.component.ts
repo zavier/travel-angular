@@ -1,6 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
-import Swiper from 'swiper';
-import { IconsService } from '../icons.service';
+import { Component, AfterViewInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-icons',
@@ -8,11 +6,10 @@ import { IconsService } from '../icons.service';
   styleUrls: ['./icons.component.styl']
 })
 export class IconsComponent implements AfterViewInit {
+  @Input()
   pages;
 
-  constructor(private iconsService: IconsService) {
-    this.pages = this.iconsService.getIconPages();
-  }
+  constructor() { }
 
   ngAfterViewInit() {
   }

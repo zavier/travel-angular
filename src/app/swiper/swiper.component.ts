@@ -1,6 +1,5 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
 import Swiper from 'swiper';
-import { SwiperService } from '../swiper.service';
 
 @Component({
   selector: 'app-swiper',
@@ -10,18 +9,14 @@ import { SwiperService } from '../swiper.service';
 export class SwiperComponent implements AfterViewInit {
   slide;
 
+  @Input()
   swiperList;
 
-  constructor(private swiperService: SwiperService) {
-    this.swiperList = this.swiperService.getSwiperList();
-  }
+  constructor() { }
 
   ngAfterViewInit() {
     this.slide = new Swiper('.swiper-container', {
-      autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-      },
+      autoplay: false,
       speed: 1000,
       direction: 'horizontal',
       loop: true,

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { RecommendService } from '../recommend.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-recommend',
@@ -7,11 +6,12 @@ import { RecommendService } from '../recommend.service';
   styleUrls: ['./recommend.component.styl']
 })
 export class RecommendComponent implements OnInit {
+  @Input()
   recommendList;
-  constructor(private recommendService: RecommendService) { }
+
+  constructor() { }
 
   ngOnInit() {
-    this.recommendList = this.recommendService.getRecommendList();
   }
 
 }
