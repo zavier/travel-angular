@@ -13,6 +13,7 @@ import { HomeIndexComponent } from './home/home-index/home-index.component';
 import { CityIndexComponent } from './city/city-index/city-index.component';
 import { CitySearchComponent } from './city/city-search/city-search.component';
 import { CityListComponent } from './city/city-list/city-list.component';
+import { CityAlphabetComponent } from './city/city-alphabet/city-alphabet.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CityListComponent } from './city/city-list/city-list.component';
     HomeIndexComponent,
     CityIndexComponent,
     CitySearchComponent,
-    CityListComponent
+    CityListComponent,
+    CityAlphabetComponent
   ],
   imports: [
     BrowserModule,

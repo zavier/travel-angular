@@ -8,31 +8,34 @@
         border-color #cccccc
 .list
     overflow hidden
-    position absolute
-    top 1.58rem
+    position relative
+    height 100%
+    top 0.08rem
     left 0
     right 0
-    bottom 0
-    .title
-        line-height .44rem
-        background #eee
-        padding-left .2rem
-        color #666666
-        font-size .26rem
-    .button-list
-        overflow hidden
-        padding .1rem .6rem .1rem .1rem
-        .button-wrapper
-            float left
-            width 33.33%
-            .button
-                margin .1rem
-                text-align center
-                border .02rem solid #ccc
-                padding .1rem 0
-                margin .1rem
-                border-radius .06rem
-    .item-list
-        .item
-            line-height .76rem
+    bottom .4rem
+    .scroll
+        height calc(100% + 2rem)
+        .title
+            line-height .54rem
+            background #eee
             padding-left .2rem
+            color #666666
+            font-size .26rem
+        .button-list
+            overflow hidden
+            padding .1rem .6rem .1rem .1rem
+            .button-wrapper
+                float left
+                width 33.33%
+                .button
+                    margin .1rem
+                    text-align center
+                    border .02rem solid #ccc
+                    padding .1rem 0
+                    margin .1rem
+                    border-radius .06rem
+        .item-list
+            .item
+                line-height .76rem
+                padding-left .2rem

@@ -31,7 +31,8 @@
               "src/styles.styl"
             ],
             "scripts": [
-              "./node_modules/swiper/dist/js/swiper.min.js"
+              "./node_modules/swiper/dist/js/swiper.min.js",
+              "./node_modules/better-scroll/dist/bscroll.min.js"
             ]
           },
           "configurations": {
