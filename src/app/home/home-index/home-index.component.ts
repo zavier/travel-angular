@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { SwiperService } from '../swiper.service';
-import { IconsService } from '../icons.service';
-import { RecommendService } from '../recommend.service';
-import { WeekendService } from '../weekend.service';
+import { SwiperService } from 'src/app/swiper.service';
+import { IconsService } from 'src/app/icons.service';
+import { RecommendService } from 'src/app/recommend.service';
+import { WeekendService } from 'src/app/weekend.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.styl']
+  selector: 'app-home-index',
+  templateUrl: './home-index.component.html',
+  styleUrls: ['./home-index.component.styl']
 })
-export class HomeComponent implements OnInit {
+export class HomeIndexComponent implements OnInit {
+
   swiperList = [];
   pages = [];
   recommendList = [];
@@ -29,5 +30,4 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

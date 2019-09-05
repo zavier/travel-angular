@@ -3,26 +3,30 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { HomeHeaderComponent } from './home/home-header/home-header.component';
 import { SwiperComponent } from './home/swiper/swiper.component';
 import { IconsComponent } from './home/icons/icons.component';
 import { RecommendComponent } from './home/recommend/recommend.component';
 import { WeekendComponent } from './home/weekend/weekend.component';
-import { CityComponent } from './city/city.component';
 import { CityHeaderComponent } from './city/city-header/city-header.component';
+import { HomeIndexComponent } from './home/home-index/home-index.component';
+import { CityIndexComponent } from './city/city-index/city-index.component';
+import { CitySearchComponent } from './city/city-search/city-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    HomeIndexComponent,
     HomeHeaderComponent,
     SwiperComponent,
     IconsComponent,
     RecommendComponent,
     WeekendComponent,
-    CityComponent,
-    CityHeaderComponent
+    CityIndexComponent,
+    CityHeaderComponent,
+    HomeIndexComponent,
+    CityIndexComponent,
+    CitySearchComponent
   ],
   imports: [
     BrowserModule,

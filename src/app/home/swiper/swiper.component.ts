@@ -16,7 +16,9 @@ export class SwiperComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.slide = new Swiper('.swiper-container', {
-      autoplay: false,
+      autoplay: {
+        delay: 3000,
+      },
       speed: 1000,
       direction: 'horizontal',
       loop: true,

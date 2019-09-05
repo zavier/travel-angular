@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, Input } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-icons',
@@ -12,6 +13,11 @@ export class IconsComponent implements AfterViewInit {
   constructor() { }
 
   ngAfterViewInit() {
+    new Swiper('.swiper-container-icons', {
+      autoplay: false,
+      direction: 'horizontal',
+      loop: true,
+    });
   }
 
 }
