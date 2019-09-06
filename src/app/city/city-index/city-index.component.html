@@ -5,8 +5,8 @@
     </div>
     <div #wrapper class="city-body">
         <div>
-            <app-city-list></app-city-list>
+            <app-city-list [cities]="cities" [hotCities]="hotCities"></app-city-list>
         </div>
     </div>
-    <app-city-alphabet></app-city-alphabet>
+    <app-city-alphabet [cities]="cities"></app-city-alphabet>
 </div>

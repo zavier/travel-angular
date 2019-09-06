@@ -1,8 +1,5 @@
 <ul class="list">
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
+    <li class="item" *ngFor="let city of cities | keyvalue">
+        {{city.key}}
+    </li>
 </ul>

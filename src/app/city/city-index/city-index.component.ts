@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import BScroll from 'better-scroll';
+import { CityService } from 'src/app/city.service';
 
 @Component({
   selector: 'app-city-index',
@@ -19,7 +20,13 @@ export class CityIndexComponent implements AfterViewInit {
 
   public scroll;
 
-  constructor() {
+  cities;
+  hotCities;
+
+  constructor(private cityService: CityService) {
+    let cityData = this.cityService.getCitys()
+    this.cities = cityData.data.cities;
+    this.hotCities = cityData.data.hotCities;
   }
   
 

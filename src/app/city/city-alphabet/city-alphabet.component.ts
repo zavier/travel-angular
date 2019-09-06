@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-city-alphabet',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./city-alphabet.component.styl']
 })
 export class CityAlphabetComponent implements OnInit {
+  @Input() cities;
 
   constructor() { }
 
