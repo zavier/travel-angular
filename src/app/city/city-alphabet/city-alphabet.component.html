@@ -1,5 +1,11 @@
 <ul class="list">
-    <li class="item" *ngFor="let city of cities | keyvalue">
+    <li class="item" 
+        *ngFor="let city of cities | keyvalue"
+        (click)="handleLetterClick(city.key)"
+        (touchstart)="handleTouchStart()"
+        (touchmove)="handleTouchMove($event)"
+        (touchend)="handleTouchEnd()"
+    >
         {{city.key}}
     </li>
 </ul>

@@ -1,5 +1,4 @@
-import { Component, ViewChild, ElementRef, AfterViewInit, Input } from '@angular/core';
-import { CitySearchComponent } from '../city-search/city-search.component';
+import { Component, ViewChild, ElementRef, AfterViewInit, Input, SimpleChange, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-city-list',
@@ -9,13 +8,10 @@ import { CitySearchComponent } from '../city-search/city-search.component';
 export class CityListComponent implements AfterViewInit {
   @Input() cities;
   @Input() hotCities;
-
-  objectKeys = Object.keys;
-
+  @Input() letter;
 
   ngAfterViewInit(): void {
-    
+    console.log("view:" + this.letter);
   }
-
 
 }

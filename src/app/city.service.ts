@@ -8,6 +8,21 @@ export class CityService {
   constructor() {
   }
 
+  getExistLetters() {
+    return Object.keys(this.getCitys().data.cities).sort();
+  }
+
+  getIndexOfLetter(alphabet) {
+    let letters = this.getExistLetters();
+    let index = -1;
+    for (let i = 0; i < letters.length; i++) {
+      if (letters[i] === alphabet) {
+        index = i;
+      }
+    }
+    return index;
+  }
+
   getCitys() {
     return {
       "ret": true,

@@ -5,8 +5,16 @@
     </div>
     <div #wrapper class="city-body">
         <div>
-            <app-city-list [cities]="cities" [hotCities]="hotCities"></app-city-list>
+            <app-city-list 
+                [cities]="cities"
+                [hotCities]="hotCities"
+            >
+            </app-city-list>
         </div>
     </div>
-    <app-city-alphabet [cities]="cities"></app-city-alphabet>
+    <app-city-alphabet 
+        [cities]="cities"
+        (clicked)="clickAlphabet($event)"
+    >
+    </app-city-alphabet>
 </div>

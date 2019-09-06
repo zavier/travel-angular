@@ -20,10 +20,19 @@
                 </div>
             </div>
         </div>
-        <div class="area" *ngFor="let city of cities | keyvalue">
-            <div class="title border-topbottom">{{city.key}}</div>
-            <div class="item-list" *ngFor="let c of cities[city.key]">
-                <div class="item border-bottom">{{c.name}}</div>
+        <div class="area" 
+            *ngFor="let city of cities | keyvalue"
+        >
+            <div class="title border-topbottom letter">
+                {{city.key}}
+            </div>
+            <div 
+                class="item-list" 
+                *ngFor="let c of cities[city.key]"
+            >
+            <div class="item border-bottom">
+                {{c.name}}
+            </div>
             </div>
         </div>
     </div>
