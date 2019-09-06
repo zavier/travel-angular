@@ -1,4 +1,12 @@
-<app-city-header></app-city-header>
-<app-city-search></app-city-search>
-<app-city-list></app-city-list>
-<app-city-alphabet></app-city-alphabet>
+<div>
+    <div #headerSearch class="headerSearch">
+        <app-city-header></app-city-header>
+        <app-city-search></app-city-search>
+    </div>
+    <div #wrapper class="city-body">
+        <div>
+            <app-city-list></app-city-list>
+        </div>
+    </div>
+    <app-city-alphabet></app-city-alphabet>
+</div>
