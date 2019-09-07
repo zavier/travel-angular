@@ -18,6 +18,7 @@ import { CityAlphabetComponent } from './city/city-alphabet/city-alphabet.compon
 import { DetailIndexComponent } from './detail/detail-index/detail-index.component';
 import { DetailBannerComponent } from './detail/detail-banner/detail-banner.component';
 import { GallaryComponent } from './common/gallary/gallary.component';
+import { DetailHeaderComponent } from './detail/detail-header/detail-header.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { GallaryComponent } from './common/gallary/gallary.component';
     CityAlphabetComponent,
     DetailIndexComponent,
     DetailBannerComponent,
-    GallaryComponent
+    GallaryComponent,
+    DetailHeaderComponent
   ],
   imports: [
     BrowserModule,

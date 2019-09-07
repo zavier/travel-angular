@@ -25,7 +25,6 @@ export class CitySearchComponent implements AfterViewInit {
   }
 
   changeKeyword() {
-    console.log("keyword changed:" + this.keyword);
     if (!this.keyword) {
       this.list = [];
       this.searchDisplay = 'none';
