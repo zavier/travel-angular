@@ -1,0 +1,16 @@
+<div class="swiper-container-gallary container"
+    (click)="handleGallaryClick()">
+    <div class="swiper-wrapper wrapper">
+        <div class="icons swiper-slide" *ngFor="let image of images">
+            <div class="icon">
+                <div class="icon-img">
+                    <div class="icon-img-content">
+                        <img class="gallary-img"
+                            src="{{image}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>

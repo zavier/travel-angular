@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { CityService } from 'src/app/city.service';
+import { CityService } from 'src/app/serice/city.service';
 
 @Component({
   selector: 'app-city-alphabet',

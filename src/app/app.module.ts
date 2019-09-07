@@ -15,6 +15,9 @@ import { CityIndexComponent } from './city/city-index/city-index.component';
 import { CitySearchComponent } from './city/city-search/city-search.component';
 import { CityListComponent } from './city/city-list/city-list.component';
 import { CityAlphabetComponent } from './city/city-alphabet/city-alphabet.component';
+import { DetailIndexComponent } from './detail/detail-index/detail-index.component';
+import { DetailBannerComponent } from './detail/detail-banner/detail-banner.component';
+import { GallaryComponent } from './common/gallary/gallary.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { CityAlphabetComponent } from './city/city-alphabet/city-alphabet.compon
     CityIndexComponent,
     CitySearchComponent,
     CityListComponent,
-    CityAlphabetComponent
+    CityAlphabetComponent,
+    DetailIndexComponent,
+    DetailBannerComponent,
+    GallaryComponent
   ],
   imports: [
     BrowserModule,

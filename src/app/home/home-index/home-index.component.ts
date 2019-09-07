@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { SwiperService } from 'src/app/swiper.service';
-import { IconsService } from 'src/app/icons.service';
-import { RecommendService } from 'src/app/recommend.service';
-import { WeekendService } from 'src/app/weekend.service';
+import { SwiperService } from 'src/app/serice/swiper.service';
+import { IconsService } from 'src/app/serice/icons.service';
+import { RecommendService } from 'src/app/serice/recommend.service';
+import { WeekendService } from 'src/app/serice/weekend.service';
 
 @Component({
   selector: 'app-home-index',
