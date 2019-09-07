@@ -8,10 +8,8 @@ import { Component, ViewChild, ElementRef, AfterViewInit, Input, SimpleChange, O
 export class CityListComponent implements AfterViewInit {
   @Input() cities;
   @Input() hotCities;
-  @Input() letter;
 
   ngAfterViewInit(): void {
-    console.log("view:" + this.letter);
   }
 
 }
