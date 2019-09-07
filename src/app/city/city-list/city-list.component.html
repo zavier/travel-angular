@@ -5,7 +5,7 @@
             <div class="button-list">
                 <div class="button-wrapper">
                     <div class="button">
-                        北京
+                        {{ currentCity }}
                     </div>
                 </div>
             </div>
@@ -13,7 +13,10 @@
         <div class="area">
             <div class="title border-topbottom">热门城市</div>
             <div class="button-list">
-                <div class="button-wrapper" *ngFor="let hotCity of hotCities">
+                <div 
+                    class="button-wrapper"
+                    *ngFor="let hotCity of hotCities"
+                    (click)="changeCity(hotCity.name)">
                     <div class="button">
                         {{hotCity.name}}
                     </div>
@@ -29,6 +32,7 @@
             <div 
                 class="item-list" 
                 *ngFor="let c of cities[city.key]"
+                (click)="changeCity(c.name)"
             >
             <div class="item border-bottom">
                 {{c.name}}
