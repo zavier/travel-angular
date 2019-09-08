@@ -19,6 +19,7 @@ import { DetailIndexComponent } from './detail/detail-index/detail-index.compone
 import { DetailBannerComponent } from './detail/detail-banner/detail-banner.component';
 import { GallaryComponent } from './common/gallary/gallary.component';
 import { DetailHeaderComponent } from './detail/detail-header/detail-header.component';
+import { DetailListComponent } from './detail/detail-list/detail-list.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { DetailHeaderComponent } from './detail/detail-header/detail-header.comp
     DetailIndexComponent,
     DetailBannerComponent,
     GallaryComponent,
-    DetailHeaderComponent
+    DetailHeaderComponent,
+    DetailListComponent
   ],
   imports: [
     BrowserModule,

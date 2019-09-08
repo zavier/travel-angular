@@ -1,6 +1,6 @@
 import { Component, Input, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import BScroll from 'better-scroll';
-import { DataService } from 'src/app/serice/data.service';
+import { DataService } from 'src/app/service/data.service';
 import { Router } from '@angular/router';
 
 @Component({

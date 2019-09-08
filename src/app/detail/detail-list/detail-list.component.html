@@ -1,0 +1,11 @@
+<div>
+    <div class="item" *ngFor="let item of list">
+        <div class="item-title">
+            <span class="item-title-icon"></span>
+            {{ item.title }}
+        </div>
+        <div *ngIf="item.children" class="item-children">
+            <app-detail-list [list]="item.children"></app-detail-list>
+        </div>
+    </div>
+</div>

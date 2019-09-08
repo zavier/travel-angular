@@ -1,6 +1,6 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import BScroll from 'better-scroll';
-import { CityService } from 'src/app/serice/city.service';
+import { CityService } from 'src/app/service/city.service';
 
 @Component({
   selector: 'app-city-index',

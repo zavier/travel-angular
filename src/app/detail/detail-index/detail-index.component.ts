@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DetailService } from 'src/app/service/detail.service';
 
 @Component({
   selector: 'app-detail-index',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-index.component.styl']
 })
 export class DetailIndexComponent implements OnInit {
+  list = [];
 
-  constructor() { }
+  constructor(
+    private detailService: DetailService
+  ) { }
 
   ngOnInit() {
+    this.list = this.detailService.getDetailList();
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from 'src/app/serice/data.service';
+import { DataService } from 'src/app/service/data.service';
 
 @Component({
   selector: 'app-home-header',

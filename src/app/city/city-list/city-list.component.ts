@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, Input, SimpleChange, OnChanges, OnInit } from '@angular/core';
-import { DataService } from 'src/app/serice/data.service';
+import { DataService } from 'src/app/service/data.service';
 import { Router } from '@angular/router';
 
 @Component({
