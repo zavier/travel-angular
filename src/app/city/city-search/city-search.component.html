@@ -8,7 +8,11 @@
     >
     <div class="search-content" [style.display]="searchDisplay" #searchResult>
         <ul>
-            <li *ngFor="let item of list" class="search-item border-bottom">
+            <li
+                *ngFor="let item of list"
+                class="search-item border-bottom"
+                (click)="changeCity(item.name)"
+            >
                 {{item.name}}
             </li>
             <li class="search-item border-bottom" *ngIf="!list.length">

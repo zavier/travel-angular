@@ -1,5 +1,7 @@
 import { Component, Input, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import BScroll from 'better-scroll';
+import { DataService } from 'src/app/serice/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-city-search',
@@ -18,7 +20,10 @@ export class CitySearchComponent implements AfterViewInit {
 
   scroll: BScroll;
 
-  constructor() { }
+  constructor(
+    private dataService: DataService,
+    private router: Router
+  ) { }
 
   ngAfterViewInit() {
     this.scroll = new BScroll(this.searchResEle.nativeElement, {click: true});
@@ -49,4 +54,8 @@ export class CitySearchComponent implements AfterViewInit {
     }, 100);
   }
 
+  changeCity(city: string) {
+    this.dataService.changeMessage(city);
+    this.router.navigate(['/']);
+  }
 }

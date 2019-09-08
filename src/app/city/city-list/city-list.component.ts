@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './city-list.component.html',
   styleUrls: ['./city-list.component.styl']
 })
-export class CityListComponent implements OnInit, AfterViewInit {
+export class CityListComponent implements OnInit {
   @Input() cities;
   @Input() hotCities;
 
@@ -16,14 +16,10 @@ export class CityListComponent implements OnInit, AfterViewInit {
   constructor(
     private dataService: DataService,
     private router: Router
-    ) {}
+  ) {}
 
   ngOnInit() {
     this.dataService.currentMessage.subscribe(city => this.currentCity = city);
-  }
-
-  ngAfterViewInit(): void {
-    
   }
 
   changeCity(city: string) {
